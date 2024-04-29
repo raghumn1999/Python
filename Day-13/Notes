@@ -1,0 +1,24 @@
+Boto3 is python package,used to create and manage the aws resources using aws apis.
+
+pre-requisite:
+    you must know the resource creation from ui,then only it is very easy to write automation script.
+
+bash
+aws CLI
+boto3  --> all above three are scripting,used when we need the quick response like list ec2 instance,s3 buckets etc
+
+CFT
+Terraform --> template language,not require any programing language. 
+if you know the teplate creation,it will create infrastructure based on your template.  
+
+why boto3 only to work with aws?
+we can work with serverless program, lambda function is one of serverless program,using lambda function Devops engineer can do the cloud optimization,monitoring resouces,Notification. for that the is no option to use bash or shell scripting,in such cases we have to use python,go language 
+
+
+serverless:
+    1)lambda function --> cost optimization,monitorning etc.
+    2)cost optimization 
+
+lambda function:
+   
+
