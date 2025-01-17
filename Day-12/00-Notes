@@ -1,0 +1,24 @@
+In Python,file operations are handled using built-in function open,which provides various modes to read,write,update file.
+
+syntax:
+    for single file operation:
+
+    with open('path_to_file','mode') as any_name:
+ 
+    for multiple files operation:
+        
+    with open('path_to_file','mode') as any_name, open('path_to_file','mode') as any_name:
+
+
+File Modes in Python:
+
+Mode	Description
+'r'	Opens the file for reading (default mode). File must exist.
+'w'	Opens the file for writing. Overwrites the file if it exists; creates a new one if not.
+'x'	Creates a new file for writing. Fails if the file already exists.
+'a'	Opens the file for appending. Creates the file if it doesn’t exist.
+'b'	Binary mode. Used with 'r', 'w', or 'a' for binary file operations.
+'t'	Text mode (default). Used with 'r', 'w', or 'a'.
+'+'	Opens the file for both reading and writing.
+
+
