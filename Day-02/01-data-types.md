@@ -1,6 +1,6 @@
 # Data Types
 
-In programming, a data type is a classification or categorization that specifies which type of value a variable can hold. Data types are essential because they determine how data is stored in memory and what operations can be performed on that data. Python, like many programming languages, supports several built-in data types. Here are some of the common data types in Python:
+In programming, a data type is a categorization, data type specifies which type of value a variable can hold. Data types are essential because they determine how data is stored in memory and what operations can be performed on that data. Python, like many programming languages, supports several built-in data types. Here are some of the common data types in Python:
 
 1. **Numeric Data Types:**
    - **int**: Represents integers (whole numbers). Example: `x = 5`
@@ -8,16 +8,16 @@ In programming, a data type is a classification or categorization that specifies
    - **complex**: Represents complex numbers. Example: `z = 2 + 3j`
 
 2. **Sequence Types:**
-   - **str**: Represents strings (sequences of characters). Example: `text = "Hello, World"`
-   - **list**: Represents lists (ordered, mutable sequences). Example: `my_list = [1, 2, 3]`
-   - **tuple**: Represents tuples (ordered, immutable sequences). Example: `my_tuple = (1, 2, 3)`
+   - **str**: Represents strings (sequences of characters, immutable). Example: `text = "Hello, World"`
+   - **list**: Represents lists (ordered collection of elements, mutable sequences). Example: `my_list = [1, 2, 3]`
+   - **tuple**: Represents tuples (ordered collection of elements, immutable sequences). Example: `my_tuple = (1, 2, 3)`
 
 3. **Mapping Type:**
    - **dict**: Represents dictionaries (key-value pairs). Example: `my_dict = {'name': 'John', 'age': 30}`
 
 4. **Set Types:**
    - **set**: Represents sets (unordered collections of unique elements). Example: `my_set = {1, 2, 3}`
-   - **frozenset**: Represents immutable sets. Example: `my_frozenset = frozenset([1, 2, 3])`
+   - **frozenset**: Represents immutable sets. Example: `my_frozenset = frozenset({1, 2, 3})`
 
 5. **Boolean Type:**
    - **bool**: Represents Boolean values (`True` or `False`). Example: `is_valid = True`

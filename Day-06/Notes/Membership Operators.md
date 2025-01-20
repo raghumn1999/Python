@@ -11,18 +11,18 @@ Membership operators in Python are used to check whether a value is present in a
 
 ### Examples
 
+```
 #### in Operator
 
-```python
-fruits = ["apple", "banana", "cherry"]
-result = "banana" in fruits
-# result will be True
-```
+fruits=['apple','kiwi','banana']
+
+checking_banana='banana' in fruits
+if checking_banana:
+    print('Banana is available in fruits list')
 
 #### not in Operator
 
-```python
-colors = ["red", "green", "blue"]
-result = "yellow" not in colors
-# result will be True
+checking_orange='orange' not in fruits
+if checking_orange:
+    print('Orange is not available in fruits list')
 ```

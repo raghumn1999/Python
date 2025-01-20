@@ -1,0 +1,115 @@
+re module in python, is a powerfull tool which is used to pattern matching and text processing
+
+. --> any charactor 
+* --> zero or more occurence
++ --> one or more occurence
+? --> zero or one occurence
+
+[] --> character class
+
+| --> OR operation
+
+^ start of a line
+
+$ end of a line
+
+most used re is .*
+.*  --> any charactor  with zero or more occurence 
+
+re.search(pattern,text)
+re.match(pattern,message)
+re.findall(pattern,message)
+re.sub(pattern,'New patter',text)
+re.split(pattern,text)
+
+
+re.compile is used to compile the pattern into regex object,we can use compiles regex object in many places(called reusability).
+
+pattern=r"\d+"
+
+text="Hi, I am Raghu, my age is 26 and i will travel 20km from my office to home"
+complied_pattern=re.compile(pattern)
+
+#now we can use the complied_pattern in any functions of re module
+
+print(compiled_pattern.search(text).group())
+print(compiled_pattern.match(text))
+print(compiled_pattern.findall(text))
+
+
+
+
+. any character
+* zero or more occu
++ one or more 
+? zero or one occ
+
+[] character class
+
+| or operation
+
+^ start of line
+i
+
+
+r"\d+"
+
+
+re.search --> search for pattern in ento , give first occurence  group() span()  --< give tuple which have start and end index. start() end()
+
+
+re.match  seach for pattern only at beginning
+
+re.findall  --> give list of all pattern  found in text
+
+re.compile
+
+re.sub(pattern,newpattern,text)
+
+re.split(pattern,text)  
+
+list with methods:
+
+fruits=['apple','kiwi']
+
+fruits.append('orange') --> add element to end of list
+
+furits.remove('kiwi')  --> removing the element by mentioning the element it self
+
+fruits.extend(['dryfruits','banana']) --> extend the list with another list
+
+fruits.insert(3,'graps') --> add element into particular index 
+
+fruits.pop(4) ---> remove the element by using index
+
+sum([4,2,6,8])
+
+max([3,4,5,2])
+
+min([6,4,5,1])
+
+len(fruits)
+
+fruits.copy()
+
+fruits.clear()
+
+fruits.index('kiwi')
+
+fruits.reverse()
+
+fruits.count('kiwi')
+
+
+
+
+
+
+
+
+
+
+
+
+
+

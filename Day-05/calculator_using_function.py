@@ -22,7 +22,7 @@ def div(a,b):
 #sys.argv[0] sys.argv[1] is like special variables in bash($0 $1 etc)
 #sys.argv[0] --> will take python file name as value
 
-#input taken from user in python through argument is always consider ad string,we have to convert into required data type
+#input taken from user in python through argument is always consider as string,we have to convert into required data type
 num1=float(sys.argv[1])
 operation=sys.argv[2]
 num2=float(sys.argv[3])

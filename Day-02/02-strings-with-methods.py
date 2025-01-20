@@ -1,8 +1,7 @@
 Name="Raghu M N"
-
 #indexing --> starts zero from leftside and start from -1 from rightside
-print("First letter of Name is",Name[0])
-print("Last letter of Name is", Name[-1])
+print(f'Fisrt letter of Name is {Name[0]}')
+print(f'Last letter of Name is {Name[-1]}')
 
 print("="*30)
 
@@ -12,6 +11,7 @@ print(Name[:4])
 print(Name[2:-1])
 print(Name[2:])
 
+# AAWSWSA  --> iterate over the string,remove formation of AWS from given string and keep remaining.
 
 #f formatting --> combining the string with varibles to complete statement.
 #f formating will support single quotes,double quotes and trible quotes.
@@ -22,6 +22,7 @@ print(f"i am {Name}, i am working as {work}")
 print("="*30)
 
 #spliting the string with space --> split()
+#the output generated using built-in function of string will not be stored in same variable,we have declare different variable
 print(Name.split(" "))
 print("="*30)
 

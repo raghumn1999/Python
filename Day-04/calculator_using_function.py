@@ -3,6 +3,9 @@
 '''def name_of_function(arg1,arg2 ....):
        logic for function
        return 
+
+we can use yield instead of return when we need to perform more tasks in one function, return will terminate function once code reaches return. the code defined under return will not be executed.
+return is treated as last step of function.
 '''
 
 def add(a,b):

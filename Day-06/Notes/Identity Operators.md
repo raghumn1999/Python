@@ -28,3 +28,10 @@ b = "world"
 result = a is not b
 # result will be True
 ```
+
+#Even if the content of x and y list is same,it will give False because each will be treated as different object
+x=[1,3,4]
+y=[1,3,4]
+
+result= x is y
+print(result)

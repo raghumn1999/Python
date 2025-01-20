@@ -1,6 +1,6 @@
 import re
 
-fruits="apple:orange:mango:graps"
+fruits=":apple:orange:mango:graps"
 
 pattern=r":"
 
