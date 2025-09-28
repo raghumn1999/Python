@@ -44,7 +44,7 @@ print("mass_699".upper())
 print(Message2.lower())
 print("MASS_87".lower())
 
-#capitalize --> make first letter only capital and other are small letters
+#capitalize --> make only first letter of staring word capital and other words are small letters
 print(Message1.capitalize())
 print("="*30)
 

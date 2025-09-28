@@ -7,7 +7,7 @@ Relational operation performed first,then logical operation performed.
 See the below example
 
 '''
-result = 3 < 5 and 5 > 2
+result = (3 < 5) and (5 > 2)
 print(result)  # Output: True (Comparison operators are evaluated before `and`)
 
 #monitoring the servers

@@ -26,7 +26,7 @@ print(f"fruits list content is {fruits}")
 fruits.insert(4,"kiwi")
 print(fruits)
 
-#pop --> pop is used to element by mentioning its index
+#pop --> pop is used to remove element by mentioning its index
 fruits.pop(3)
 print(f"fruits list content is {fruits}")
 

@@ -1,16 +1,15 @@
-
 import os
 
 #getting the value from env
-print(os.environ.get('HOME'))
+print(os.getenv("HOME"))
 
 #setting the environment variable
 os.environ["DEPLOY_ENV"]='Production'
-print(f'Environment name is {os.environ.get("DEPLOY_ENV")}')
+print(f'Environment name is {os.getenv("DEPLOY_ENV")}')
 
 #deleting the environment variable
 os.environ.pop('DEPLOY_ENV')
-print("DEPLOY_ENV after removal:", os.environ.get("DEPLOY_ENV"))
+print("DEPLOY_ENV after removal:", os.getenv("DEPLOY_ENV"))
 
 #====================================================
 
@@ -24,11 +23,21 @@ print(f'current directory {os.getcwd()}')
 
 os.chdir(current_dir)
 
-#creation of directory
-os.makedirs(os.path.join(os.getcwd(),'test'),exist_ok=True)  # exist_ok=True option will not raise error if folder already exist
+# create and delete directory
+os.mkdir("test")
+os.rmdir("test")
+
+# Create intermediate directories
+os.makedirs("parent/child",exist_ok=True)  # exist_ok=True option will not raise error if folder already exist
+
+# Remove recursively  --> it will remove parent and child both directories only if they are empty
+os.removedirs("parent/child")
+
+# removing the file
+os.remove('test.txt')
 
 #list files and folders in given path
-print(os.listdir('.'))
+print(os.listdir('/home/nraghu'))
 
 #checking file or directory exists
 print(os.path.exists('/home/nraghu'))
@@ -47,19 +56,15 @@ else:
 print(os.path.isdir('/home/nraghu'))
 print(os.path.isfile('/home/nraghu/raghu.txt'))
 
-#delete file
-#os.remove(file_path)
-
-#delete directory
-path_to_dir=os.path.join(os.getcwd(),'test')
-os.rmdir(path_to_dir)
-print(f"Files and Folder after deletion are {os.listdir()}")
-
-
 #Executing the command: os.system(command). on windows os.system() will use cmd.exe and on linux os.system() wil shell
 
 #on linux system
+# os.system is used to execute the command in the subshell, we can use any linux or windows commands to execute
 os.system("ls -la | awk 'NR>3'")
+
+# if we format the directory creatioin command,we can use os.system to create the directory
+os.system('mkdir testing123')
+os.system('rm -rf testing123')
 
 #on windows
 #os.system('mkdir new_folder')
@@ -71,6 +76,9 @@ with open(old_file,'w') as o_file:
 
 #renaming the file
 os.rename('old_file.txt','new_file.txt')
+
+# forming the path 
+os.path.join('/home','raghu','nagendra')  # --> /home/raghu/nagendra
 
 #changing the permission into file or directory
 os.makedirs(os.path.join(os.getcwd(),'raghu'),exist_ok=True)

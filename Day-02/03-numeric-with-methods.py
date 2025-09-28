@@ -21,7 +21,7 @@ percentage=5.598989
 
 print(abs(percentage))
 
-#round built-in function is used to round the decimal places and float number
+#round built-in function is used to round the decimal places of float number
 print(round(percentage,3))
 
 #below will roundup the 5.543 into next number that is 6
