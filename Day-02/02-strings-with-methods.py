@@ -48,6 +48,10 @@ print("MASS_87".lower())
 print(Message1.capitalize())
 print("="*30)
 
+#title() --> make first letter of each word in capital letters
+name="Raghu from malavalli"
+print(name.title())
+
 #strip --> will remove the space in begining and ending of string and give only string
 print("   Nagendra ".strip())
 

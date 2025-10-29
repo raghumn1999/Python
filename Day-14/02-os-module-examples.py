@@ -66,6 +66,9 @@ os.system("ls -la | awk 'NR>3'")
 os.system('mkdir testing123')
 os.system('rm -rf testing123')
 
+server="172.35.34.2"
+response=os.system(f"ping -c {server} > /dev/null 2>&1")
+
 #on windows
 #os.system('mkdir new_folder')
 #os.system('rmdir new_folder')

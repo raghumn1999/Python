@@ -9,6 +9,6 @@ if type_of_instance=="t2.micro":
 elif type_of_instance=="t2.medium":
    print("we can create the t2.medium instance,it will charge 4 dollar")
 elif type_of_instance=="t2.large":
-   print("we can create the t2.medium instance,it will charge 6 dollar")
+   print("we can create the t2.large instance,it will charge 6 dollar")
 else:
    print(f"we don't have access to create {type_of_instance}")

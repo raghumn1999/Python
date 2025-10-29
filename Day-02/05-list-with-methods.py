@@ -48,7 +48,6 @@ print(numbers.count(2))
 #fruits.clear()
 #print(fruits)
 
-
 #Built-in functions
 
 #len --> finding the length of list means number of elements

@@ -15,7 +15,7 @@ print(tools)
 tools.remove('Jenkins')
 print(tools)
 
-#discard() -->  discard is used to remove the element from set even if element not present in set,it will raise exception
+#discard() -->  discard is used to remove the element from set even if element not present in set,it will not raise exception
 tools.discard('Argo CD')
 print(tools)
 
@@ -45,8 +45,8 @@ print(difference_of_devops_tools)
 print(devops_tools.symmetric_difference(cloud_tools))
 
 a={1,2,3}
-b={1,2,3,4,5,6}
+b={1,2,4,5,3}
 
-print(a.issubset(b)) # --> gives true if all elements of set a are available in set b
+print(a.issubset(b)) # --> gives true if all elements of set a are available in set b, order of elements doesn't matter
 
 print(b.issuperset(a)) # --> gives true if set b contain all element of set a and also other elements

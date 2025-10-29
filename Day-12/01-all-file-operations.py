@@ -13,7 +13,8 @@ with open("read_example.txt", "r") as file: # gives result TextIOWrapper ,we can
 #writing into file. if file is exists overwrite the content otherwise create and write content
 
 with open('write_example.txt','w') as w_file:
-    w_file.write('Hi I am Raghu')
+    w_file.write('Hi I am Raghu \n')
+    w_file.write('I am learning Python \n')
 
 
 #Appending content into file --> open file for appending content, if not present create and write content
